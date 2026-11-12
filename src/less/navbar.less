@@ -1,0 +1,41 @@
+.navbar {
+  background: @dark;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: @white;
+
+    span {
+      color: @primary;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 25px;
+
+    a {
+      color: @white;
+      transition: @transition;
+
+      &:hover {
+        color: @primary;
+      }
+    }
+  }
+
+  .nav-button {
+    background: @primary;
+    color: @white;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+}
